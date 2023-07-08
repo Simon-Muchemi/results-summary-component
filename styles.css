@@ -74,14 +74,12 @@ h3{
 }
 .container{
     display: flex;
-    outline: 1px red dashed;
     border-radius: 20px;
     width: 99%;
     height: 33rem;
     box-shadow: 10px 10px 50px grey;
 }
 .results-panel{
-    outline: 1px blue dashed;
     border-radius: 20px 20px;
     width: 100%;
     margin: 0;
@@ -166,4 +164,20 @@ button:hover{
 img{
     padding-right: 5px;
     align-items: baseline;
+}
+@media only screen and  (max-width: 600px){
+    .container{
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        margin: 0;
+    }
+    .summary-panel{
+        margin: 20px;
+        width: 90%;
+        /*padding: 5px;*/
+    }
+    .results-panel{
+        border-radius: 0 0 20px 20px;
+    }
 }
