@@ -67,46 +67,103 @@ body{
 p{
     font-size: 18px;
 }
+h3{
+    font-size: 15px;
+    margin-top: 35px;
+    font-weight: 600;
+}
 .container{
     display: flex;
     outline: 1px red dashed;
     border-radius: 20px;
-    width: 80%;
+    width: 99%;
+    height: 33rem;
+    box-shadow: 10px 10px 50px grey;
 }
 .results-panel{
     outline: 1px blue dashed;
-    border-radius: 20px 0 0 20px;
-    width: 50%;
+    border-radius: 20px 20px;
+    width: 100%;
     margin: 0;
     color: hsl(0, 0%, 100%);
     text-align: center;
-    background-color: hsl(241, 81%, 54%);
+    background: linear-gradient( 10deg ,hsl(241, 81%, 54%), hsl(252, 100%, 67%));
 }
-.summary-panel{
-    outline: 1px green dashed;
-    width: 50%;
-}
-.summary-panel p {
-    vertical-align: sub;
-}
-
 .point-panel{
     display: flex;
     justify-content: space-around;
 }
+
 .panel{
+    margin-top: 60px;
     background-color: hsla(256, 72%, 46%, 1);
-    padding: 3% 16%;
+    width: 200px;
     border-radius: 50%;
 }
 #grade{
     font-weight: 700;
-    font-size: 28px;
+    font-size: 45px;
 }
-.results{
-    margin-right: 20px;
-    word-spacing: 20px;
+.report{
+    width: 75%;
+    margin-left: 13%;
+    margin-top: 55px;
 }
-.overall{
+.report p{
+    font-size: 15px;
+}
+/*Summary panel styles*/
+.summary-panel {
+    margin: 10px;
+    width: 100%;
+}
+.boxes{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 2px 5px ;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+.reaction {
+    background-color: hsla(0, 100%, 67%, 0.22);
+    color: hsl(0, 100%, 67%);
+}
+.memory{
+    color: hsl(39, 100%, 56%);
+    background-color: hsla(39, 100%, 56%, 0.28);
+}
+.visual{
+    color: hsl(234, 85%, 45%);
+    background-color: hsla(234, 85%, 45%, 0.15);
+}
+.verbal{
+    background-color: hsla(166, 100%, 37%, 0.09);
+    color: hsl(166, 100%, 37%);
+}
+.marks{
+    color: grey;
+    font-weight: 500;
+}
+.bold{
     color: hsl(224, 30%, 27%);
+    padding: 5px;
+    font-weight: 700;
+}
+button{
+    background-color: hsl(224, 30%, 27%);
+    padding: 15px 0 15px 0;
+    margin-top: 25px;
+    width: 100%;
+    border-radius: 25px;
+    color: whitesmoke;
+    font-weight: 400;
+    border: 0;
+}
+button:hover{
+    background: linear-gradient(180deg, hsl(252, 67%, 38%), hsl(241, 86%, 43%));
+}
+img{
+    padding-right: 5px;
+    align-items: baseline;
 }
