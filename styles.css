@@ -171,6 +171,7 @@ img{
         flex-direction: column;
         height: 100%;
         margin: 0;
+        border-radius: 0;
     }
     .summary-panel{
         margin: 20px;
